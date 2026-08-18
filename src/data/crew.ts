@@ -130,13 +130,13 @@ export const leadership: Leader[] = [
   },
   {
     role: "Faculty Advisor",
-    name: "Prof. Dr. Wasim Ahmad Khan",
-    photo: "/img/Picture12.webp",
+    name: "Prof. Dr. Qasim Zafar",
+    photo: "/img/qasim zafar.jpeg",
     note: PENDING,
     links: [
       {
         type: "linkedin",
-        href: "https://www.linkedin.com/in/professor-dr-wasim-a-khan-ceng-fimeche-547b2512",
+        href: "https://www.linkedin.com/in/muhammadqasimzafar/",
       },
       {
         type: "website",

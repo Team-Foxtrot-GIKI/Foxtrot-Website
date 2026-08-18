@@ -80,7 +80,7 @@ export const missions: Mission[] = [
     competition: "IMechE UAS Challenge",
     series: "imeche",
     year: 2024,
-    country: "United Kingdom",
+    country: "Pakistan",
     venue: PENDING,
     aircraftSlug: "cardinal",
     result: "1st Place",
@@ -116,7 +116,7 @@ export const missions: Mission[] = [
     competition: "IMechE UAS Challenge",
     series: "imeche",
     year: 2023,
-    country: "United Kingdom",
+    country: "Pakistan",
     venue: PENDING,
     aircraftSlug: "sylph",
     result: "1st Place",
@@ -160,7 +160,7 @@ export const missions: Mission[] = [
     awards: ["Business Proposition Award"],
     summary:
       "In a spirited competition the team stood 1st in Asia and 6th in the world at the live fly-offs, and took the Business Proposition Award for the second year running.",
-    photos: ["/img/Picture3.webp", "/img/Picture14.webp", "/img/Picture15.webp"],
+    photos: ["/img/Picture3.webp", "/img/Barq-2.jpg", "/img/Picture15.webp"],
     lessons: PENDING,
   },
   {
