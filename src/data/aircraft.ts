@@ -87,7 +87,7 @@ export const aircraft: Aircraft[] = [
     gallery: PENDING,
     drawings: PENDING,
     callouts: PENDING,
-    missionProfile: PENDING,
+    missionProfile: "Cardinal was designed for disaster management and emergency response scenarios. The mission required the UAV to navigate to a designated checkpoint, collect a payload containing test tubes, and safely transport it back to the designated location. The complete mission had to be accomplished within **10 minutes**.",
     autonomy: PENDING,
   },
   {

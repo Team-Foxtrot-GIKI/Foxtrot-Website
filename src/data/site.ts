@@ -12,8 +12,8 @@ export const site = {
   description:
     "Team Foxtrot is the UAV team of the Ghulam Ishaq Khan Institute (GIKI). Since 2018 we have designed, fabricated, and flown eight autonomous aircraft in national and international competition.",
   email: "teamfoxtrot.gik@gmail.com",
-  phone: "+92-332-8272455",
-  phoneHref: "tel:+923328272455",
+  phone: "+92-303-8442456",
+  phoneHref: "tel:+923038442456",
   address: "GIKI, Topi, District Swabi, 23640, Khyber Pakhtunkhwa, Pakistan",
   addressShort: "Topi, Swabi, Pakistan",
   mapUrl: "https://goo.gl/maps/DqgM9mDz6dCDjPrN9",
@@ -21,8 +21,7 @@ export const site = {
   formAction: "https://formspree.io/f/mpwpygre",
   founded: 2018,
   credits: [
-    { name: "Moiz Taha", href: "https://www.linkedin.com/in/moiz-taha/" },
-    { name: "Shahmir Gohar", href: null },
+    { name: "Hooria Dar", href: "www.linkedin.com/in/hooria-dar-6559ab31a" },
   ],
 } as const;
 
