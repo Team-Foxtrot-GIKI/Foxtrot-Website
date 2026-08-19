@@ -83,12 +83,12 @@ export const subteams = [
     body: "Creates the CAD model of the UAV based on the challenge's requirements.",
   },
   {
-    name: "Automation",
-    body: "Oversees all the electronics and automates the UAV.",
+    name: "Avionics",
+    body: "Oversees all onboard electronics, control systems, and flight automation.",
   },
   {
-    name: "Imagery",
-    body: "Handles software-related work, such as using AI for object detection.",
+    name: "SDES",
+    body: "Handles sensor data, software, and embedded systems development, including AI-based object detection.",
   },
   {
     name: "Fabrication",
