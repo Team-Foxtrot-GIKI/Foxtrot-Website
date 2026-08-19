@@ -187,18 +187,32 @@ export default function FlightLogPage() {
               </Link>
             }
           />
-          <ol className="grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-3">
-            {milestones.map((m) => (
+          <ol className="grid grid-cols-3 grid-rows-3 gap-px bg-line">
+            {milestones.slice(0, 7).map((m) => (
               <li key={m.year} className="bg-panel p-5">
                 <p className="font-display text-2xl font-bold tabular-nums text-amber">
                   {m.year}
                 </p>
                 <h3 className="mt-1 text-lg tracking-[0.05em]">{m.title}</h3>
-                <p className="mt-2 line-clamp-4 text-sm text-titanium-text">
-                  {m.body}
-                </p>
+                <div className="mt-3 border-t border-line pt-2">
+                  <span className="label-micro text-scope">{m.result}</span>
+                </div>
               </li>
             ))}
+
+            <li key="more" className="bg-panel p-5 flex items-center justify-center text-center">
+              <div>
+                <p className="font-display text-2xl font-bold tabular-nums text-amber">2026 - Present</p>
+                <h3 className="mt-1 text-lg tracking-[0.05em] uppercase">More to come</h3>
+                <p className="mt-3 label-micro text-titanium-text">Full timeline on the timeline page</p>
+              </div>
+            </li>
+
+            <li key="next" className="bg-panel p-5 flex items-center justify-center text-center">
+              <div className="p-2 w-20 h-20 flex items-center justify-center">
+                <Image src="/img/drone-svgrepo-com.svg" alt="Foxtrot drone" width={80} height={80} className="object-contain w-full h-full" />
+              </div>
+            </li>
           </ol>
         </div>
       </section>

@@ -13,6 +13,8 @@ export type Milestone = {
   year: string;
   title: string;
   body: string;
+  /** Short teaser/result for homepage */
+  result: string;
   /** Optional link into the archive. */
   href?: string;
   image?: string;
@@ -24,6 +26,7 @@ export const milestones: Milestone[] = [
     year: "2018",
     title: "Team Formation",
     body: "A group of students from different disciplines at GIKI joined hands and decided to design and build UAVs — practical, fully autonomous aircraft capable of competing with the best in the world.",
+    result: "Team formed at GIKI",
     detail: PENDING,
   },
   {
@@ -32,6 +35,7 @@ export const milestones: Milestone[] = [
     body: "Project EURUS, built around a STOL system for precision landing, flew at the IMechE UAS Challenge in the United Kingdom and won the Highest New Entrant Award.",
     href: "/aircraft/eurus",
     image: "/img/project-eurus.webp",
+    result: "Highest New Entrant Award",
     detail: PENDING,
   },
   {
@@ -40,6 +44,7 @@ export const milestones: Milestone[] = [
     body: "Project SWALLOW placed 5th in the world and 2nd in Asia, and took the Business Proposition Award for the first time.",
     href: "/aircraft/swallow",
     image: "/img/project-swallow.webp",
+    result: "5th World · 2nd Asia",
     detail: PENDING,
   },
   {
@@ -48,6 +53,7 @@ export const milestones: Milestone[] = [
     body: "Project BARQ — a tri-motor fixed-wing with retractable gear and a reverse-thrust mechanism — stood 1st in Asia and 6th globally at the live fly-offs.",
     href: "/aircraft/barq",
     image: "/img/project-barq.webp",
+    result: "1st in Asia · 6th Global",
     detail: PENDING,
   },
   {
@@ -56,6 +62,7 @@ export const milestones: Milestone[] = [
     body: "The team moved from fixed-wing to multirotor airframes, entering two competitions in one year: SYLPH took 1st place at the IMechE UAS Challenge, while ALTAIR placed 6th globally in the team's first AUVSI SUAS campaign in the United States.",
     href: "/aircraft/sylph",
     image: "/img/project-sylph.png",
+    result: "1st in IMechE UAS Challenge · 6th globally in AUVSI SUAS USA",
     detail: PENDING,
   },
   {
@@ -64,6 +71,7 @@ export const milestones: Milestone[] = [
     body: "Project CARDINAL took 1st place and the Safety & Airworthiness Award at the IMechE UAS Challenge, while SPECTRE placed 4th in mission ranking at AUVSI SUAS.",
     href: "/aircraft/cardinal",
     image: "/img/Project Cardinal.png",
+    result: "1st · Airworthiness Award · 4th Mission Rank",
     detail: PENDING,
   },
   {
@@ -72,6 +80,7 @@ export const milestones: Milestone[] = [
     body: "Project AUJ represented the team at TEKNOFEST Turkey 2025, placing 11th out of 131 participating teams.",
     href: "/aircraft/auj",
     image: "/img/Project auj.png",
+    result: "11th out of 131 teams",
     detail: PENDING,
   },
 ];
