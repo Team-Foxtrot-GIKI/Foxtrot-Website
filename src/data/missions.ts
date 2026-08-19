@@ -12,7 +12,7 @@
 
 import { PENDING, type Pending } from "./pending";
 
-export type MissionSeries = "imeche" | "suas";
+export type MissionSeries = "imeche" | "suas" | "teknofest";
 
 export type Mission = {
   slug: string;
@@ -52,6 +52,13 @@ export const series: Record<
     description:
       "The SUAS competition fosters interest in Unmanned Aerial Systems, stimulates interest in UAS technologies, and engages students in a challenging mission. It requires students to design, integrate, report on, and demonstrate a UAS capable of autonomous flight and navigation, remote sensing via onboard payload sensors, and execution of a specific set of tasks.",
   },
+  teknofest: {
+    name: "TEKNOFEST",
+    short: "TEKNOFEST",
+    country: "Turkey",
+    description:
+      "TEKNOFEST is a major aerospace and technology festival featuring competitive tracks where university teams present innovative UAV projects and prototypes. The event emphasises practical design, rapid prototyping, autonomy, and mission capability, bringing together international teams to demonstrate solutions for real-world challenges.",
+  },
 };
 
 /** The four SUAS mission tasks, carried over from the old AUVSI page. */
@@ -75,6 +82,23 @@ export const suasTasks = [
 ];
 
 export const missions: Mission[] = [
+  {
+    slug: "teknofest-2025-auj",
+    competition: "TEKNOFEST Turkey",
+    series: "teknofest",
+    year: 2025,
+    country: "Turkey",
+    venue: PENDING,
+    aircraftSlug: "auj",
+        result: "11th of 131 teams",
+    podium: false,
+    awards: [],
+    summary:
+      "Project AUJ: a rotary-wing quadcopter developed for TEKNOFEST Turkey 2025. The design features an X-frame quadcopter with folding arms for portability, a modular payload system supporting servo-based drops and an electromagnet for retrieval, Jetson Orin Nano–based vision (YOLO) for marker detection, and CUAV V5+ autopilot integration for autonomous mission execution.",
+    photos: ["/img/teknofest1.jpeg", "/img/teknofest2.jpeg"],
+    lessons: PENDING,
+  },
+
   {
     slug: "imeche-2024",
     competition: "IMechE UAS Challenge",

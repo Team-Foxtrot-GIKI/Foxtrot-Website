@@ -66,6 +66,14 @@ export const milestones: Milestone[] = [
     image: "/img/Project Cardinal.png",
     detail: PENDING,
   },
+  {
+    year: "2025",
+    title: "TEKNOFEST Campaign",
+    body: "Project AUJ represented the team at TEKNOFEST Turkey 2025, placing 11th out of 131 participating teams.",
+    href: "/aircraft/auj",
+    image: "/img/Project auj.png",
+    detail: PENDING,
+  },
 ];
 
 /** Sub-team structure, carried over verbatim from the old About Us page. */

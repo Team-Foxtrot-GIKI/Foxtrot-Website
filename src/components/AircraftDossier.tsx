@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useId, useState } from "react";
 import type { Aircraft } from "@/data/aircraft";
-import { isPending, settled } from "@/data/pending";
+import { isPending } from "@/data/pending";
 import { PendingChip } from "./Pending";
 import { Pill, SpecRow } from "./primitives";
 import TelemetryPanel, { type TelemetryBar } from "./TelemetryPanel";
@@ -41,8 +41,6 @@ export default function AircraftDossier({
   const [open, setOpen] = useState(defaultOpen);
   const [tab, setTab] = useState<Tab>("Overview");
   const baseId = useId();
-  const gallery = settled(item.gallery) ?? [];
-  const drawings = settled(item.drawings);
 
   function onKeyDown(e: React.KeyboardEvent) {
     const i = TABS.indexOf(tab);
@@ -184,31 +182,6 @@ export default function AircraftDossier({
                 <SpecRow key={s.label} label={s.label} value={s.value} />
               ))}
             </dl>
-            {!drawings && (
-              <div className="mt-5 border border-dashed border-line p-4">
-                <PendingChip label="Awaiting SolidWorks drawings" />
-                <p className="mt-2 max-w-[60ch] text-sm text-titanium-text">
-                  Export drawing views as DXF or SVG — hidden lines removed, no
-                  dimensions or title block — and the annotated diagram renders
-                  here.
-                </p>
-              </div>
-            )}
-            {gallery.length > 0 && (
-              <div className="mt-5 grid gap-2 sm:grid-cols-2">
-                {gallery.map((src) => (
-                  <div key={src} className="relative aspect-[4/3] border border-line">
-                    <Image
-                      src={src}
-                      alt={`Project ${item.name}`}
-                      fill
-                      sizes="(max-width: 640px) 100vw, 50vw"
-                      className="object-cover"
-                    />
-                  </div>
-                ))}
-              </div>
-            )}
           </div>
 
           {/* Telemetry */}
