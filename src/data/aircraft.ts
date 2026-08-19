@@ -54,6 +54,35 @@ export type Aircraft = {
 
 export const aircraft: Aircraft[] = [
   {
+    slug: "auj",
+    name: "AUJ",
+    designation: "FTX-09",
+    year: 2025,
+    airframe: "X-quadcopter",
+    category: "Multirotor",
+    missionSlug: "teknofest-2025-auj",
+    competition: "TEKNOFEST Turkey 2025",
+    result: "11th of 131 teams",
+    podium: false,
+    thesis: PENDING,
+    photo: "/img/Project auj.png",
+    overview:
+      "Project AUJ is a foldable X-frame quadcopter developed for TEKNOFEST Turkey 2025. It features a modular payload mechanism with servo drop and electromagnet retrieval, Jetson-based vision for autonomous marker detection, and CUAV V5+ integration for robust autonomy.",
+    specs: [
+      { label: "Maximum Takeoff Mass", value: "3.813 kg" },
+      { label: "Top Airspeed", value: "16.91 m/s" },
+      { label: "Payload Capacity (mission limit)", value: "200 g" },
+      { label: "Power System", value: "7000 mAh 6S Li-Po" },
+    ],
+    gallery: ["/img/teknofest1.jpeg", "/img/teknofest2.jpeg"],
+    drawings: PENDING,
+    callouts: PENDING,
+    missionProfile:
+      "A rotary-wing design optimised for mission payload delivery, retrieval, and rapid deployment from a compact storage box.",
+    autonomy: PENDING,
+  },
+
+  {
     slug: "cardinal",
     name: "Cardinal",
     designation: "FTX-08",
