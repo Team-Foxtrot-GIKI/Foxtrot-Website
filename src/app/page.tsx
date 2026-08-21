@@ -187,30 +187,44 @@ export default function FlightLogPage() {
               </Link>
             }
           />
-          <ol className="grid grid-cols-3 grid-rows-3 gap-px bg-line">
+          <ol className="grid grid-cols-2 gap-px bg-line sm:grid-cols-3">
             {milestones.slice(0, 7).map((m) => (
-              <li key={m.year} className="bg-panel p-5">
-                <p className="font-display text-2xl font-bold tabular-nums text-amber">
+              <li key={m.year} className="min-h-[11rem] bg-panel p-3 sm:p-5">
+                <p className="font-display text-xl font-bold tabular-nums text-amber sm:text-2xl">
                   {m.year}
                 </p>
-                <h3 className="mt-1 text-lg tracking-[0.05em]">{m.title}</h3>
+                <h3 className="mt-1 break-words text-sm tracking-[0.05em] sm:text-lg">
+                  {m.title}
+                </h3>
                 <div className="mt-3 border-t border-line pt-2">
                   <span className="label-micro text-scope">{m.result}</span>
                 </div>
               </li>
             ))}
 
-            <li key="more" className="bg-panel p-5 flex items-center justify-center text-center">
+            <li key="more" className="flex min-h-[11rem] items-center justify-center bg-panel p-3 text-center sm:p-5">
               <div>
-                <p className="font-display text-2xl font-bold tabular-nums text-amber">2026 - Present</p>
-                <h3 className="mt-1 text-lg tracking-[0.05em] uppercase">More to come</h3>
-                <p className="mt-3 label-micro text-titanium-text">Full timeline on the timeline page</p>
+                <p className="font-display text-xl font-bold tabular-nums text-amber sm:text-2xl">
+                  2026 - Present
+                </p>
+                <h3 className="mt-1 break-words text-sm uppercase tracking-[0.05em] sm:text-lg">
+                  More to come
+                </h3>
+                <p className="mt-3 break-words text-[0.6rem] text-titanium-text sm:text-[0.625rem]">
+                  Full timeline on the timeline page
+                </p>
               </div>
             </li>
 
-            <li key="next" className="bg-panel p-5 flex items-center justify-center text-center">
-              <div className="p-2 w-20 h-20 flex items-center justify-center">
-                <Image src="/img/drone-svgrepo-com.svg" alt="Foxtrot drone" width={80} height={80} className="object-contain w-full h-full" />
+            <li key="next" className="flex min-h-[11rem] items-center justify-center bg-panel p-3 text-center sm:p-5">
+              <div className="flex h-16 w-16 items-center justify-center sm:h-20 sm:w-20">
+                <Image
+                  src="/img/drone-svgrepo-com.svg"
+                  alt="Foxtrot drone"
+                  width={80}
+                  height={80}
+                  className="h-full w-full object-contain"
+                />
               </div>
             </li>
           </ol>

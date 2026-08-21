@@ -40,9 +40,13 @@ export default function Titleblock({
     <div className="corner border border-line">
       <div className="border-b border-line px-5 py-6 sm:px-7 sm:py-8">
         {kicker && <p className="label mb-3 text-amber">{kicker}</p>}
-        <h1 className="text-[clamp(2rem,7vw,4rem)] tracking-[0.015em]">{title}</h1>
+        <h1 className="break-words text-[clamp(2rem,7vw,4rem)] leading-[0.96] tracking-[0.015em]">
+          {title}
+        </h1>
         {lede && (
-          <p className="mt-4 max-w-[56ch] text-pretty text-titanium-text">{lede}</p>
+          <p className="mt-4 max-w-[56ch] break-words text-pretty text-titanium-text">
+            {lede}
+          </p>
         )}
         {children}
       </div>

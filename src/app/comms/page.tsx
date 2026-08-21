@@ -114,7 +114,7 @@ export default function CommsPage() {
               title="Instagram post from Team Foxtrot"
               loading="lazy"
               scrolling="no"
-              className="mx-auto h-[550px] w-full max-w-[320px] border border-line"
+              className="mx-auto aspect-[4/5] w-full max-w-[20rem] border border-line sm:max-w-[22rem]"
             />
           ))}
         </div>
